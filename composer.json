@@ -1,0 +1,19 @@
+{
+    "name": "mangora/core",
+    "description": "WordPress manga streaming plugin",
+    "type": "wordpress-plugin",
+    "require-dev": {
+        "phpunit/phpunit": "^9.0",
+        "wp-coding-standards/wpcs": "^2.3",
+        "dealerdirect/phpcodesniffer-composer-installer": "^0.7"
+    },
+    "scripts": {
+        "test": "phpunit",
+        "phpcs": "phpcs --standard=WordPress --extensions=php --ignore=*/vendor/*,*/node_modules/* ."
+    },
+    "autoload": {
+        "psr-4": {
+            "Mangora\\": "includes/"
+        }
+    }
+}
