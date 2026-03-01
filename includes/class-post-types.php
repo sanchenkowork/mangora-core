@@ -1,8 +1,9 @@
 <?php
+namespace Mangora;
+
 if ( ! defined( 'ABSPATH' ) ) {
     exit;
 }
-namespace Mangora;
 
 class Post_Types {
 
